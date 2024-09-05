@@ -1,6 +1,6 @@
 const lightbox = document.querySelector('.lightbox');
 const lightboxImage = document.querySelector('.lightbox-content');
-const images = document.querySelectorAll('.carta-imagem');
+const images = document.querySelectorAll('.conteudo-carta-imagem');
 const closeButton = document.querySelector('.close');
 
 /*Comando para deixar a carta grande na tela e escurecer o fundo*/
@@ -26,4 +26,3 @@ window.addEventListener("scroll", function(){
     let header = document.querySelector('#header')
     header.classList.toggle('rolagem', window.scrollY > 650)
 })
-

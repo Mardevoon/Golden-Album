@@ -19,6 +19,7 @@
 html {
     height: 500vh;
 }
+
 /*NOTA: Apagar essa linha do código após terminar tudo*/
 /*NOTA: Apagar essa linha do código após terminar tudo*/
 /*NOTA: Apagar essa linha do código após terminar tudo*/
@@ -45,10 +46,11 @@ header {
     transition: 0.3s;
 }
 
-header.rolagem{
+header.rolagem {
     background-color: var(--cinza-claro);
     padding: 10px 4%;
 }
+
 /*Sessão de pesquisa do header*/
 .pesquisa {
     display: flex;
@@ -74,7 +76,7 @@ button:hover {
 }
 
 /*Sessão do banner*/
-.banner{
+#banner {
     height: 100vh;
     background-image: url("./img/banner-1.png");
     background-position: center;
@@ -86,37 +88,43 @@ button:hover {
     justify-content: center;
 }
 
-.banner-faixa{
+.banner-faixa {
     /*background-color: var(--branco);*/
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
     text-align: center;
 }
 
-.banner-faixa h1{
+.banner-faixa h1 {
     color: var(--verde);
     font-size: 4em;
 }
 
-.banner-faixa h1 span{
+.banner-faixa h1 span {
     color: var(--amarelo-dourado);
 }
 
 /*Sessão das cartas*/
-.carta{
+#conteudo h2{
+    margin: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.conteudo-carta {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.carta-imagem{
+.conteudo-carta-imagem {
     margin: 15px;
     width: 200px;
     border-radius: 15px;
     transition: transform 0.1s ease-in-out;
 }
 
-.carta-imagem:hover{
+.conteudo-carta-imagem:hover {
     transform: scale(1.2);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -132,18 +140,18 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;  
-  }
-  
-  .lightbox-content {
+    z-index: 999;
+}
+
+.lightbox-content {
     max-width: 90%;
     max-height: 90%;
-  }
-  
-  .close {
+}
+
+.close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-  }
+}
