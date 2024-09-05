@@ -10,6 +10,7 @@
     --cinza-escuro: #ccc;
     --amarelo-dourado: #FFBF41;
     --amarelo-escuro: #CC9900;
+    --verde: #008000;
 }
 
 html {
@@ -35,7 +36,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 header.rolagem{
@@ -80,15 +81,36 @@ button:hover {
 }
 
 .banner-faixa{
-    background-color: var(--branco);
+    /*background-color: var(--branco);*/
+    background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
     text-align: center;
 }
 
 .banner-faixa h1{
+    color: var(--verde);
     font-size: 4em;
 }
 
 .banner-faixa h1 span{
     color: var(--amarelo-dourado);
+}
+
+/*Sessão das cartas*/
+.carta{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carta-imagem{
+    margin: 15px;
+    width: 200px;
+    border-radius: 15px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.carta-imagem:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
