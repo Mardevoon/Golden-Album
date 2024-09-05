@@ -1,41 +1,94 @@
-body{
+* {
+    /*Alterações gerais do site*/
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    /*Definição das var de cores*/
     --branco: white;
     --cinza-claro: #F8F9FA;
     --cinza-escuro: #ccc;
     --amarelo-dourado: #FFBF41;
     --amarelo-escuro: #CC9900;
-    --font-padrão: 'Barlow', sans-serif;
 }
 
-header {
-    background-color: var(--cinza-claro); /* Azul-marinho */
+html {
+    height: 500vh;
+}
+
+/*Sessão do header*/
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 0px 24px;
+}
+
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 24px;
-  }
-  
-  .pesquisa{
-    display: flex;
-  }
+}
 
-  input[type="text"] {
+header {
+    width: 100%;
+    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+header.rolagem{
+    background-color: var(--cinza-claro);
+    padding: 10px 4%;
+}
+/*Sessão de pesquisa do header*/
+.pesquisa {
+    display: flex;
+}
+
+input[type="text"] {
     width: 200px;
     padding: 10px;
     border: 1px solid var(--cinza-escuro);
     border-radius: 10px 0px 0px 10px;
-  }
-  
-  button {
+}
+
+button {
     padding: 10px 20px;
     background-color: var(--amarelo-dourado);
     border: none;
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
-  }
+}
 
-  button:hover {
+button:hover {
     background-color: var(--amarelo-escuro);
-  }
+}
+
+/*Sessão do banner*/
+.banner{
+    height: 100vh;
+    background-image: url("./img/banner-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-faixa{
+    background-color: var(--branco);
+    width: 100%;
+    text-align: center;
+}
+
+.banner-faixa h1{
+    font-size: 4em;
+}
+
+.banner-faixa h1 span{
+    color: var(--amarelo-dourado);
+}
