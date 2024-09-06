@@ -41,3 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
       img.addEventListener('click', () => openLightbox(img.src));
   });
 });
+
+/*Script do menu para rolagem de tela*/
+window.addEventListener("scroll", function () {
+  let header = document.querySelector('#header');
+  header.classList.toggle('rolagem', window.scrollY > 650);
+});
