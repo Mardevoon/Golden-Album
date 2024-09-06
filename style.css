@@ -1,10 +1,10 @@
+/* Reseta o estilo padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
 
-    /* Variáveis de cores */
     --branco: #fff;
     --cinza-claro: #F8F9FA;
     --cinza-escuro: #ccc;
@@ -18,15 +18,15 @@ html {
 }
 
 .container {
-    max-width: 100%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     padding: 0 24px;
 }
 
 .flex {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 header {
@@ -45,7 +45,7 @@ header.rolagem {
     z-index: 1000;
 }
 
-/* Sessão de pesquisa do header */
+/* Pesquisa */
 .pesquisa {
     display: flex;
 }
@@ -63,90 +63,55 @@ button {
     border: none;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: var(--amarelo-escuro);
 }
 
-/* Sessão do banner */
+/* Banner */
 #banner {
     height: 100vh;
     background: url("./img/banner-1.png") center no-repeat;
     background-size: cover;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .banner-faixa {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
-    width: 100%;
     text-align: center;
 }
 
 .banner-faixa h1 {
-    color: var(--verde);
     font-size: 4em;
+    color: var(--verde);
 }
 
 .banner-faixa h1 span {
     color: var(--amarelo-dourado);
 }
 
-/* Sessão das cartas */
+/* Cartas */
 #conteudo h2 {
     margin: 30px;
     font-size: 3em;
     text-align: center;
 }
 
-.conteudo-carta {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .conteudo-carta-imagem {
-    transition: 0.2s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .conteudo-carta-imagem:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2); /* Zoom da imagem */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra ao redor */
     cursor: pointer;
 }
 
-/* Lightbox */
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.lightbox-content {
-    max-width: 70%;
-    max-height: 70%;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-/* Cartas */
 .card {
     display: flex;
     justify-content: center;
@@ -155,7 +120,7 @@ button:hover {
     position: relative;
     background-color: var(--cinza-claro);
     border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
 }
 
@@ -208,4 +173,39 @@ button:hover {
     text-decoration: none;
     border-radius: 8px;
     transition: 0.2s;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox-content {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo se necessário */
+    justify-content: space-between; /* Garante que os cards tenham espaçamento entre eles */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px; /* Opcional, para dar um espaçamento interno */
 }
