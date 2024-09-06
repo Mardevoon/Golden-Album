@@ -1,11 +1,11 @@
 * {
-    /*Alterações gerais do site*/
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
-    /*Definição das var de cores*/
-    --branco: white;
+
+    /* Variáveis de cores */
+    --branco: #fff;
     --cinza-claro: #F8F9FA;
     --cinza-escuro: #ccc;
     --amarelo-dourado: #FFBF41;
@@ -13,22 +13,14 @@
     --verde: #008000;
 }
 
-/*NOTA: Apagar esta linha do código após terminar tudo*/
-/*NOTA: Apagar esta linha do código após terminar tudo*/
-/*NOTA: Apagar esta linha do código após terminar tudo*/
 html {
     height: 500vh;
 }
 
-/*NOTA: Apagar essa linha do código após terminar tudo*/
-/*NOTA: Apagar essa linha do código após terminar tudo*/
-/*NOTA: Apagar essa linha do código após terminar tudo*/
-
-/*Sessão do header*/
 .container {
     max-width: 100%;
     margin: auto;
-    padding: 0px 24px;
+    padding: 0 24px;
 }
 
 .flex {
@@ -49,9 +41,11 @@ header {
 header.rolagem {
     background-color: var(--cinza-claro);
     padding: 10px 4%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-/*Sessão de pesquisa do header*/
+/* Sessão de pesquisa do header */
 .pesquisa {
     display: flex;
 }
@@ -60,29 +54,27 @@ input[type="text"] {
     width: 200px;
     padding: 10px;
     border: 1px solid var(--cinza-escuro);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 button {
     padding: 10px 20px;
     background-color: var(--amarelo-dourado);
     border: none;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: var(--amarelo-escuro);
 }
 
-/*Sessão do banner*/
+/* Sessão do banner */
 #banner {
     height: 100vh;
-    background-image: url("./img/banner-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("./img/banner-1.png") center no-repeat;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,8 +96,8 @@ button:hover {
     color: var(--amarelo-dourado);
 }
 
-/*Sessão das cartas*/
-#conteudo h2{
+/* Sessão das cartas */
+#conteudo h2 {
     margin: 30px;
     font-size: 3em;
     text-align: center;
@@ -118,18 +110,16 @@ button:hover {
 }
 
 .conteudo-carta-imagem {
-    margin: 15px;
-    width: 200px;
-    border-radius: 15px;
-    transition: transform 0.1s ease-in-out;
+    transition: 0.2s;
 }
 
 .conteudo-carta-imagem:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
-/*Comando para deixar a carta grande na tela e escurecer o fundo*/
+/* Lightbox */
 .lightbox {
     position: fixed;
     top: 0;
@@ -144,8 +134,8 @@ button:hover {
 }
 
 .lightbox-content {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 70%;
+    max-height: 70%;
 }
 
 .close {
@@ -154,4 +144,68 @@ button:hover {
     right: 10px;
     font-size: 24px;
     cursor: pointer;
+}
+
+/* Cartas */
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 340px;
+    position: relative;
+    background-color: var(--cinza-claro);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 400px;
+}
+
+.card .img-box {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    transition: 0.5s;
+}
+
+.card:hover .img-box {
+    top: -100px;
+    transform: scale(0.6);
+}
+
+.card .img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    top: 150px;
+    height: 250px;
+}
+
+.card .read-more {
+    background-color: var(--amarelo-dourado);
+    padding: 12px;
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s;
 }
