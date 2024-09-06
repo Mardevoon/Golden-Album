@@ -89,8 +89,8 @@ button:hover {
 }
 
 .banner-faixa {
-    /*background-color: var(--branco);*/
     background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
     width: 100%;
     text-align: center;
 }
@@ -106,8 +106,8 @@ button:hover {
 
 /*Sessão das cartas*/
 #conteudo h2{
-    margin: 20px;
-    font-size: 2em;
+    margin: 30px;
+    font-size: 3em;
     text-align: center;
 }
 
