@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="content">
               <h3>${artista.title}</h3>
+              <p>${artista.genre}</p>
               <p>${artista.text}</p>
               <a href="${artista.link}" class="read-more" target="_blank">Leia mais</a>
           </div>

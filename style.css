@@ -41,7 +41,6 @@ header.rolagem {
     z-index: 1000;
 }
 
-/* Pesquisa */
 .pesquisa {
     display: flex;
 }
@@ -62,7 +61,6 @@ button {
     transition: background-color 0.3s;
 }
 
-/* Banner */
 #banner {
     height: 100vh;
     background: url("./img/banner.png") center no-repeat;
@@ -88,7 +86,6 @@ button {
     color: var(--cor-primaria);
 }
 
-/* Cartas */
 #conteudo h2 {
     margin: 30px;
     font-size: 3em;
@@ -100,8 +97,8 @@ button {
 }
 
 .conteudo-carta-imagem:hover {
-    transform: scale(1.2); /* Zoom da imagem */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra ao redor */
+    transform: scale(1.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
 
@@ -115,6 +112,7 @@ button {
     border-radius: 20px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
+    margin: 40px 0 0 0;
 }
 
 .card:hover {
@@ -143,7 +141,7 @@ button {
 .card .content {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 10px;
     position: absolute;
     top: 300px;
     width: 100%;
@@ -168,7 +166,6 @@ button {
     transition: 0.2s;
 }
 
-/* Lightbox */
 .lightbox {
     position: fixed;
     top: 0;
@@ -197,10 +194,10 @@ button {
 
 #card-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo se necessário */
-    justify-content: space-between; /* Garante que os cards tenham espaçamento entre eles */
-    gap: 20px; /* Espaçamento entre os cards */
-    padding: 20px; /* Opcional, para dar um espaçamento interno */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
 }
 
 footer {
