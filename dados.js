@@ -112,7 +112,7 @@ const artistas = [
         youtube: 'https://www.youtube.com/watch?v=Zi_XLOBDo_Y'
     },
     {
-        image: './img/artistas/Whitney_Houston.png',
+        image: './img/artistas/whitney_houston.png',
         title: 'Whitney Houston',
         genre: 'Pop/R&B',
         text: 'Whitney Houston foi uma cantora e atriz americana conhecida por sua poderosa voz e sucessos como "I Will Always Love You". Ela é uma das artistas mais vendidas de todos os tempos.',
