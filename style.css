@@ -116,7 +116,7 @@ button {
 }
 
 .card:hover {
-    height: 400px;
+    height: 450px;
 }
 
 .card .img-box {
@@ -154,7 +154,7 @@ button {
 
 .card:hover .content {
     top: 150px;
-    height: 250px;
+    height: 300px;
 }
 
 .card .read-more {

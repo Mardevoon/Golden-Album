@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <p>${artista.genre}</p>
               <p>${artista.text}</p>
               <a href="${artista.link}" class="read-more" target="_blank">Leia mais</a>
+              <a href="${artista.youtube}" class="read-more" target="_blank">Música mais ouvida</a>
           </div>
       `;
       container.appendChild(card);
