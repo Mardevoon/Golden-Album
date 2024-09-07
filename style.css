@@ -7,7 +7,7 @@
 
     --cor-primaria: #fabdbb;
     --cor-segundaria: #bee3db;
-    --cor-terciaria: #CC9900;
+    --cor-terciaria: black;
     --cor-quarta: #fff;
     --cor-quinta: #F8F9FA;
     --cor-sexta: #ccc;
@@ -162,7 +162,7 @@ button {
 .card .read-more {
     background-color: var(--cor-primaria);
     padding: 12px;
-    color: var(--cor-quarta);
+    color: var(--cor-terciaria);
     text-decoration: none;
     border-radius: 8px;
     transition: 0.2s;
@@ -201,4 +201,11 @@ button {
     justify-content: space-between; /* Garante que os cards tenham espaçamento entre eles */
     gap: 20px; /* Espaçamento entre os cards */
     padding: 20px; /* Opcional, para dar um espaçamento interno */
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor-segundaria);
+    padding: 20px;
+    margin: 80px 0 0 0;
 }

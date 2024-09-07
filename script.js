@@ -23,17 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Renderizar os cards
-  athletes.forEach(athlete => {
+  artistas.forEach(artista => {
       const card = document.createElement('div');
       card.classList.add('card');
       card.innerHTML = `
           <div class="img-box">
-              <img src="${athlete.image}" alt="${athlete.title}" class="conteudo-carta-imagem">
+              <img src="${artista.image}" alt="${artista.title}" class="conteudo-carta-imagem">
           </div>
           <div class="content">
-              <h3>${athlete.title}</h3>
-              <p>${athlete.text}</p>
-              <a href="${athlete.link}" class="read-more" target="_blank">Leia mais</a>
+              <h3>${artista.title}</h3>
+              <p>${artista.text}</p>
+              <a href="${artista.link}" class="read-more" target="_blank">Leia mais</a>
           </div>
       `;
       container.appendChild(card);
