@@ -34,4 +34,5 @@ Abre uma issue aqui no GitHub ou me chama no Discord!
 Dados dos artistas: Os dados dos artistas estão no arquivo dados.js. Você pode adicionar ou remover artistas à vontade.
 Imagens: As imagens dos artistas estão na pasta img.
 Responsividade: O site se adapta a diferentes tamanhos de tela, então você pode acessá-lo do seu computador, tablet ou celular.
-Vamos rockear!
+
+### Vamos rockear!
