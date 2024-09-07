@@ -7,7 +7,19 @@ const athletes = [
     },
     {
         image: './img/cartas-de-atletas/BRONZE-ATLETISMO-ALISON-DOS-SANTOS.png',
-        title: 'Alison dos Santos',
+        title: 'carlos',
+        text: 'Alison dos Santos é um atleta brasileiro de destaque no atletismo...',
+        link: 'https://pt.wikipedia.org/wiki/Alison_dos_Santos'
+    },
+    {
+        image: './img/cartas-de-atletas/BRONZE-ATLETISMO-ALISON-DOS-SANTOS.png',
+        title: 'Maria da Souza',
+        text: 'Alison dos Santos é um atleta brasileiro de destaque no atletismo...',
+        link: 'https://pt.wikipedia.org/wiki/Alison_dos_Santos'
+    },
+    {
+        image: './img/cartas-de-atletas/BRONZE-ATLETISMO-ALISON-DOS-SANTOS.png',
+        title: 'Santiago',
         text: 'Alison dos Santos é um atleta brasileiro de destaque no atletismo...',
         link: 'https://pt.wikipedia.org/wiki/Alison_dos_Santos'
     },
@@ -19,7 +31,19 @@ const athletes = [
     },
     {
         image: './img/cartas-de-atletas/BRONZE-ATLETISMO-ALISON-DOS-SANTOS.png',
-        title: 'Alison dos Santos',
+        title: 'carlos',
+        text: 'Alison dos Santos é um atleta brasileiro de destaque no atletismo...',
+        link: 'https://pt.wikipedia.org/wiki/Alison_dos_Santos'
+    },
+    {
+        image: './img/cartas-de-atletas/BRONZE-ATLETISMO-ALISON-DOS-SANTOS.png',
+        title: 'Maria da Souza',
+        text: 'Alison dos Santos é um atleta brasileiro de destaque no atletismo...',
+        link: 'https://pt.wikipedia.org/wiki/Alison_dos_Santos'
+    },
+    {
+        image: './img/cartas-de-atletas/BRONZE-ATLETISMO-ALISON-DOS-SANTOS.png',
+        title: 'Santiago',
         text: 'Alison dos Santos é um atleta brasileiro de destaque no atletismo...',
         link: 'https://pt.wikipedia.org/wiki/Alison_dos_Santos'
     }

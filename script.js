@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImage = document.querySelector('.lightbox-content');
   const closeButton = document.querySelector('.close');
   const container = document.getElementById('card-container');
+  const searchForm = document.getElementById('search-form');
+  const searchInput = document.getElementById('search-input');
 
   // Função para abrir lightbox
   function openLightbox(imageSrc) {
@@ -40,10 +42,30 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = card.querySelector('.conteudo-carta-imagem');
       img.addEventListener('click', () => openLightbox(img.src));
   });
-});
 
-/*Script do menu para rolagem de tela*/
-window.addEventListener("scroll", function () {
-  let header = document.querySelector('#header');
-  header.classList.toggle('rolagem', window.scrollY > 650);
+  // Função para filtrar os cards
+  function filterCards(query) {
+      const cards = document.querySelectorAll('#card-container .card');
+      cards.forEach(card => {
+          const title = card.querySelector('.content h3').textContent.toLowerCase();
+          if (title.includes(query.toLowerCase())) {
+              card.style.display = 'flex';
+          } else {
+              card.style.display = 'none';
+          }
+      });
+  }
+
+  // Evento para filtrar cards ao pesquisar
+  searchForm.addEventListener('submit', (event) => {
+      event.preventDefault(); // Evita o envio do formulário
+      const query = searchInput.value;
+      filterCards(query);
+  });
+
+  // Script do menu para rolagem de tela
+  window.addEventListener("scroll", function () {
+    let header = document.querySelector('#header');
+    header.classList.toggle('rolagem', window.scrollY > 650);
+  });
 });
