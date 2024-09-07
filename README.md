@@ -1,5 +1,5 @@
-## Golden Album
-# Sua Playlist de Músicos Lendários
+# Golden Album
+## Sua Playlist de Músicos Lendários
 **O que é esse trem?**
 
 É um site simples e divertido pra você explorar um monte de artistas incríveis! Imagina um álbum de figurinhas digital, só que com fotos de seus cantores favoritos e um monte de informação legal sobre cada um.
