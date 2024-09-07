@@ -1,2 +1,3 @@
-# Olimcard-2.0
- Segunda versão do site Olímcard. Dessa vez fazer uma versão mais limpa e fácil de entender.
+# Golden Album
+Projeto feito durante a imersão DEV da Alura de 2024.
+Neste projeto crio um álbum apresentando os maiores cantores mundiais (segundo a MINHA opinião).
